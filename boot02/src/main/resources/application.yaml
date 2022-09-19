@@ -1,0 +1,39 @@
+person:
+
+  #userName: zqy \n la
+
+  userName: "zqy \n la"
+  #双引号会作为换行输出
+
+  #userName: 'zqy \n la'
+  #单引号会作为字符串输出
+
+  boss: false
+  birth: 2001/2/2
+  age: 21
+  interests:
+    - piano
+    - singing
+    - dancing
+    - 王者
+  animal:
+    - cat
+    - dog
+  score:
+    Math: 60
+    Chinese: 90
+    English: 80
+  salarys:
+    - 1400
+    - 0
+  pet:
+    name: candy
+    weight: 20
+  allPets:
+    sick:
+      - name: Tony
+        weight: 21
+      - name: Jim
+        weight: 19
+    health:
+      - {name: Candy, weight: 20}

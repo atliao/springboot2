@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>欢迎进入首页！</h1>
+<form action = "/user" method="get">
+    <input type="submit" value="Get 提交">
+</form>
+<form action = "/user" method="post">
+    <input type="submit" value="Post 提交">
+</form>
+<form action = "/user" method="post">
+    <input type="hidden" name="_method" value="put">
+    <input type="hidden" name="_m" value="put">
+    <input type="submit" value="Put 提交">
+</form>
+<form action = "/user" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="_m" value="delete">
+    <input type="submit" value="Delete 提交">
+</form>
+<form action="/save" method="post">
+    测试@RequestBody获取数据</br>
+    用户名:<input type="text" name="username"></br>
+    密码:<input type="text" name="password"></br>
+    <input type="submit" value="提交"></br>
+</form>
+<a href="/cars/sell;low=34;brand=byd,audi,yd">获取矩阵变量的值</a></br>
+<a href="/boss/1;age=20/2;age=10">获取矩阵变量的值2</a></br>
+<h1>
+    <a href="/la">进入success</a></br>
+</h1>
+</body>
+</html>

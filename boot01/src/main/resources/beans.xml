@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="baby" class="com.la.boot.bean.User">
+        <property name="name" value="ZhangQinYu"></property>
+        <property name="age" value="21"></property>
+        <property name="pet" ref="littleCat"></property>
+    </bean>
+
+    <bean id="littleCat" class="com.la.boot.bean.Pet">
+        <property name="name" value="littleCat"></property>
+    </bean>
+</beans>

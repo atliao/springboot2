@@ -1,0 +1,17 @@
+spring:
+
+  #访问前缀
+  #mvc:
+  #  static-path-pattern: /la/** #会导致在其他路径下的index失效，只能在static下
+
+  #改变访问路径
+  #web:
+  #  resources:
+  #    static-locations: classpath:/lala/
+  #    add-mappings: false #禁用所有静态资源
+
+  #开启restful风格
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true

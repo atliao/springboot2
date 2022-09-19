@@ -1,0 +1,11 @@
+1.请求先找controller
+2.如果没有就找静态资源
+    静态映射：/**
+    在多个目录：/public、/resources、/static、/META-INF/resources中都可以直接访问
+
+    可以在配置文件中设置访问前缀: /la/**
+
+    可以改变默认静态资源路径
+
+3.都没有就返回404
+4.视图解析 thymeleaf
