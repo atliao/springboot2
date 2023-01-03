@@ -1,0 +1,11 @@
+1.视图解析：thymeleaf
+    实现页面跳转
+
+2.数据访问
+
+3.整合mybatis-plus访问数据库，并显示数据
+
+-------------------
+有问题：
+换成mybatis-plus后
+yaml文件中对mybatis映射文件mapper的location要替换成mybatis-plus的

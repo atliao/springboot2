@@ -1,0 +1,69 @@
+spring:
+  redis:
+    #Redis服务器地址
+    host: 192.168.159.128
+    #Redis服务器连接端口
+    port: 6379
+    #Redis数据库索引（默认位0
+    database: 0
+    #连接超时时间（毫秒）
+    timeout: 1800000
+
+    jedis:
+      pool:
+        #连接池最大连接数（使用负值表示没有限制）
+        max-active: 200
+        #最大阻塞等待时间（复数表示没有限制）
+        max-wait: -1
+        #连接池中的最大空闲连接
+        max-idle: 32
+        #连接池中的最小空闲连接
+        min-idle: 0
+
+    #密码
+    password: 1257695265
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
+        instance:
+          prefer-ip: true #使用ip注册进来
+  application:
+    name: boot06
+
+
+
+management:
+  endpoints:
+    #enabled-by-default: false #默认关闭所有监控端点
+    enabled-by-default: true #默认开启所有监控端点
+    web:
+      exposure:
+        include: '*' #以web方式暴露所有监控端点
+
+  endpoint: #对某个端点的具体配置
+    health:
+      show-details: always
+      enabled: true
+
+    info:
+      enabled: true
+
+    beans:
+      enabled: true
+
+    metrics:
+      enabled: true
+
+    env:
+      enabled: true
+
+
+
+info:
+  appName: boot created by liao
+  appVersion: 1.0
+  mavenProjectName: @project.artifactId@
+  mavenProjectVersion: @project.version@
+

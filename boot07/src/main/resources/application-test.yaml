@@ -1,0 +1,5 @@
+person:
+  name: test-其他
+
+server:
+  port: 7000
